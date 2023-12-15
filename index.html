@@ -9,14 +9,14 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #f5f0ff; /* Light purple background */
+            background-color: #d8cdec; /* Light purple background */
             color: #333; /* Dark text color */
         }
 
         header {
             text-align: center;
             padding: 10px;
-            background-color: #8a4dff; /* Purple header background */
+            background-color: #54358e; /* Purple header background */
             color: #fff; /* White text color */
         }
 
@@ -32,8 +32,26 @@
             margin-top: 20px;
             text-align: center;
             padding: 10px;
-            background-color: #8a4dff; /* Purple footer background */
+            background-color: #54358e; /* Purple footer background */
             color: #fff; /* White text color for the footer */
+        }
+
+        .publication {
+            margin-bottom: 10px; /* Adjust the margin between publications */
+        }
+
+        .publication h3,
+        .publication p {
+            margin: 0; /* Remove margin for h3 and p within .publication */
+        }
+
+        .repository {
+            margin-bottom: 10px; /* Adjust the margin between repositories */
+        }
+
+        .repository h3,
+        .repository p {
+            margin: 0; /* Remove margin for h3 and p within .repository */
         }
     </style>
 </head>
@@ -42,31 +60,76 @@
 
     <header>
         <h1>Cameron Thieme</h1>
-        <p>Professional Homepage</p>
     </header>
 
     <section>
         <h2>About Me</h2>
-        <p>Wwebsite under contruction.</p>
+        <img src="professional_pic.jpg" alt="Your Name" style="width: 200px; height: 200px;">
+        <p>PhD in mathematics with postdoctoral research in machine learning and data science. Keen to apply my technical skills in Python, machine learning, and statistics in industry. Skilled at solving practical problems and communicating complicated concepts to both technical and non-technical audiences.  Very willing to relocate.  </p>
+    </section>
+
+    <section>
+        <h2>Repositories</h2>
+        <div class="repository">
+            <h3><a href="https://github.com/cameronthieme/LeslieProject" target="_blank">Machine Learning for Dynamical Systems </a></h3>
+            <p>Research on the reliability of long-run predictions made by machine learning models </p>
+            <p>Performed Bayesian analysis to quantify accuracy of insights derived from data-driven dynamics</p>
+            <p>Main language: Python.  Also includes shell scripts for training and analyzing models in parallel on a computing cluster using a Slurm workload manager</p>
+        </div>
+
+        <div class="repository">
+            <h3><a href="https://github.com/cameronthieme/IMAbootcamp2021" target="_blank">Forecasting Hydroelectric Power</a></h3>
+            <p>Consulting project for Cargill as part of the 2021 IMA Math-to-Industry Bootcamp</p>
+            <p>Power levels needed to inform future investment strategies</p>
+            <p>Data mined from public sources</p>
+            <p>Time series analysis in Python using SARIMAX, deep learning, and other machine learning techniques</p>
+            <p>Predicted power production with under 4% error 12 months in advance</p>
+        </div>
+
+        <!-- Add more repos as needed -->
     </section>
 
     <section>
         <h2>Contact Information</h2>
-        <p>Email: your.email@example.com<br>
-            LinkedIn: <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn Profile</a></p>
+        <p>Email: cameron.m.thieme@gmail.com<br>
+            LinkedIn: <a href="https://www.linkedin.com/in/cameron-thieme/" target="_blank">LinkedIn Profile</a></p>
     </section>
 
     <section>
-        <h2>Professional Materials</h2>
+        <h2>Resume and CV</h2>
         <ul>
-            <li><a href="link-to-resume.pdf" target="_blank">Resume</a></li>
-            <li><a href="link-to-portfolio" target="_blank">Portfolio</a></li>
+            <li><a href="Resume_V26.pdf" target="_blank">Resume</a></li>
+            <li><a href="CV_23_V5.pdf" target="_blank">CV</a></li>
+            <!-- <li><a href="link-to-portfolio" target="_blank">Portfolio</a></li> -->
             <!-- Add more links as needed -->
         </ul>
     </section>
 
+    <section>
+        <h2>Publications</h2>
+        <div class="publication">
+            <h3><a href="https://www.aimsciences.org/article/doi/10.3934/jcd.2023004" target="_blank">Conditioned Wiener processes as nonlinearities: A rigorous probabilistic analysis of dynamics </a></h3>
+            <p>Konstantin Mischaikow, Cameron Thieme</p>
+            <p>Journal of Computational Dynamics, 2023</p>
+        </div>
+
+        <div class="publication">
+            <h3><a href="https://projecteuclid.org/journals/topological-methods-in-nonlinear-analysis/volume-59/issue-1/Conley-index-theory-and-the-attractor-repeller-decomposition-for-differential/10.12775/TMNA.2021.018.short" target="_blank">Conley index theory and the attractor-repeller decomposition for differential inclusions </a></h3>
+            <p>Cameron Thieme</p>
+            <p>Topological Methods in Nonlinear Dynamics, 2022</p>
+        </div>
+
+        <div class="publication">
+            <h3><a href="https://projecteuclid.org/journals/topological-methods-in-nonlinear-analysis/volume-59/issue-1/Isolating-neighborhoods-and-their-stability-for-differential-inclusions-and-Filippov/10.12775/TMNA.2021.014.short" target="_blank">Isolating neighborhoods and their stability for differential inclusions and Filippov systems </a></h3>
+            <p>Cameron Thieme</p>
+            <p>Topological Methods in Nonlinear Dynamics, 2022</p>
+        </div>
+
+        <!-- Add more publications as needed -->
+    </section>
+
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2023 Cameron Thieme. All rights reserved.</p>
     </footer>
 
 </body>
